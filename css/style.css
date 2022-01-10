@@ -371,6 +371,34 @@ dfn {
   padding: 4px 8px;
   letter-spacing: 1.5px;
 }
+.btn-copy {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  background-color: #297dcd;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #d5d5d5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  padding: 2px 6px;
+}
+.btn-copy span {
+  margin-left: 5px;
+}
+.code-wrapper .btn-copy:hover {
+  color: #fff;
+}
 html.show-mobile-nav {
   overflow: hidden;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
