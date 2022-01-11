@@ -377,7 +377,7 @@ dfn {
   right: 5px;
   top: 5px;
   cursor: pointer;
-  background-color: #297dcd;
+  background-color: #515151;
   border: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -970,14 +970,14 @@ html.show-mobile-nav .navbar-list {
 }
 .markdown-body pre,
 .markdown-body .highlight {
-  background: #282c34;
+  background: #606266;
   overflow: auto;
   color: #ccc;
   padding: 15px 20px;
 }
 .markdown-body .highlight .gutter pre,
 .markdown-body .gist .gist-file .gist-data .line-numbers {
-  color: #666;
+  color: #ccc;
   padding-right: 20px;
 }
 .markdown-body .highlight pre {
