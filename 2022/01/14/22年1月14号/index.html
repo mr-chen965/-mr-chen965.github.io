@@ -29,7 +29,7 @@
 
                       <title>
                         
-                          跨域问题 | 
+                          22年1月14号 | 
                               可以
                       </title>
 
@@ -57,7 +57,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F665a10a82e9ee623561fb750af39271826fda8af.jpg&amp;refer=http%3A%2F%2Fi0.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644369435&amp;t=18910f7f90780be428a61949fab5ff15)"></div>
+    <div class="post-image" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2020-11-13%2F5fae377ad9bd0.jpg&amp;refer=http%3A%2F%2Fpic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644370745&amp;t=ea93e4506185ebd2f0b7dd7b417b8a31)"></div>
   
 
   <!-- navbar -->
@@ -108,20 +108,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">跨域问题</h1>
+          <h1 class="title-wrap">22年1月14号</h1>
           <h2 class="title-sub-wrap">
             <strong>CH</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-10T09:16:20.000Z" itemprop="datePublished">2022-01-10</time>
+            <time  class="article-date" datetime="2022-01-14T01:44:18.000Z" itemprop="datePublished">2022-01-14</time>
           </h2>
           <ul class="wrap-list dark">
   
-    <li><a href="../../../../categories/%E5%B7%A5%E4%BD%9C/">📒 工作</a></li>
+    <li><a href="../../../../categories/%E7%94%9F%E6%B4%BB/">📒 生活</a></li>
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="../../../../tags/%E8%B7%A8%E5%9F%9F/">🏷️ 跨域</a></li>
+    <li><a href="../../../../tags/%E5%AD%98%E9%92%B1%E8%AE%A1%E5%88%92/">🏷️ 存钱计划</a></li>
   
 </ul>
         </div>
@@ -145,51 +145,10 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p><img src="https://img1.baidu.com/it/u=39291849,1907461648&fm=26&fmt=auto" alt="努力ing"></p>
+        <p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-01-24%2F5a68247e4f6c9.jpg%3Fdown&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1644369828&t=5522031ef553a373e1ff28df14b3270b" alt="努力ing"></p>
 <span id="more"></span>
 
-
-
-<p><strong><strong>关闭浏览器，vue代理域名，uniapp代理域名</strong></strong>  </p>
-<p>一、关闭谷歌浏览器跨域（简单粗暴）  </p>
-<p>在桌面找到谷歌浏览器图标—-&gt;右键—-&gt;属性—-&gt;快捷方式—-&gt; 目标<br><img src="20210119172853484.png" alt="努力ing"></p>
-<p>这里我的谷歌浏览器地址是：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe </span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>需要在后面加上一句话：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--disable-web-security --user-data-dir=C:\Program Files (x86)\Google\Chrome\Application</span><br></pre></td></tr></table></figure>
-
-
-
-<p>注意：–disable-web-security… 最前面是有个 空格 的千万别忘了哦<br><img src="20210119173146378.png" alt="努力ing"></p>
-<p>最后结果：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&quot;</span> --disable-web-security --user-data-dir=C:\Program Files (x86)\Google\Chrome\Application</span><br></pre></td></tr></table></figure>
-
-
-
-<p>最后操作：关闭当前谷歌浏览器，重新双击点开<br><img src="20210119173312737.png" alt="努力ing">  </p>
-<p>出现这样的界面，恭喜你已经成功关闭跨域，可以快乐的撸代码了O(∩_∩)O哈哈~  </p>
-<p>二、vue的跨域解决（设置代理域名）<br>在根目录下找到 vue.config.js 这个js文件，如果没有就自己创建一个，复制如下代码：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&quot;path&quot;</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	<span class="attr">devServer</span>: &#123;</span><br><span class="line">		<span class="attr">port</span>: <span class="string">&quot;8998&quot;</span>, <span class="comment">//dev运行的端口</span></span><br><span class="line">		<span class="attr">host</span>: <span class="string">&#x27;localhost&#x27;</span>, <span class="comment">//本地运行的ip</span></span><br><span class="line">		<span class="attr">open</span>: <span class="literal">true</span>, <span class="comment">//项目启动时是否自动打开浏览器，我这里设置为false,不打开，true表示打开</span></span><br><span class="line">		<span class="attr">proxy</span>: &#123;</span><br><span class="line">			<span class="string">&#x27;/&#x27;</span>: &#123; <span class="comment">//代理的地址如果 是 / 请求地址就不用带 如果是 /api， 请求地址则是 /api + 接口url</span></span><br><span class="line">				<span class="string">&quot;target&quot;</span> : <span class="string">&quot;http://xx.xxx.xx.x:1008&quot;</span>,<span class="comment">//请求的api地址</span></span><br><span class="line">				<span class="string">&quot;changeOrigin&quot;</span> : <span class="literal">true</span>,</span><br><span class="line">				<span class="string">&quot;secure&quot;</span> : <span class="literal">false</span></span><br><span class="line">			&#125;,</span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="attr">historyApiFallback</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">disableHostCheck</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">noInfo</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">https</span>: <span class="literal">false</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>需要使用的请求方法中（注意/api的使用）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">uni.request(&#123;</span><br><span class="line">	<span class="attr">url</span>: <span class="string">&#x27;/api/oauth/token&#x27;</span>,</span><br><span class="line">	<span class="attr">method</span>: <span class="string">&#x27;GET&#x27;</span>,</span><br><span class="line">	<span class="attr">data</span>: &#123;</span><br><span class="line">		<span class="attr">client_id</span>: <span class="string">&#x27;weixin&#x27;</span>,</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">header</span>: &#123;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">success</span>: <span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">		<span class="comment">//alert(res.data);</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-
-
-<p>然后关闭项目重新 run 一遍 </p>
-<p>三、uniapp的跨域解决（设置代理域名）<br>在manifest.json文件中 找到 h5 复制如下代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;h5&quot;</span> : &#123;</span><br><span class="line">        <span class="string">&quot;title&quot;</span> : <span class="string">&quot;测试&quot;</span>,</span><br><span class="line">        <span class="string">&quot;domain&quot;</span> : <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">        <span class="string">&quot;devServer&quot;</span>: &#123;</span><br><span class="line">        	<span class="string">&quot;port&quot;</span>: <span class="string">&quot;8998&quot;</span>, <span class="comment">//dev运行的端口</span></span><br><span class="line">        	<span class="string">&quot;host&quot;</span>: <span class="string">&quot;localhost&quot;</span>, <span class="comment">//本地运行的ip</span></span><br><span class="line">        	<span class="string">&quot;open&quot;</span>: <span class="literal">true</span>, <span class="comment">//项目启动时是否自动打开浏览器，我这里设置为false,不打开，true表示打开</span></span><br><span class="line">        	<span class="string">&quot;proxy&quot;</span>: &#123;</span><br><span class="line">        		<span class="string">&quot;/&quot;</span>: &#123; <span class="comment">//代理的地址如果 是 / 请求地址就不用带 如果是 /api， 请求地址则是 /api + 接口url</span></span><br><span class="line">        			<span class="string">&quot;target&quot;</span> : <span class="string">&quot;http://39.109.13.1:1004&quot;</span>,<span class="comment">//请求的api地址</span></span><br><span class="line">        			<span class="string">&quot;changeOrigin&quot;</span> : <span class="literal">true</span>,</span><br><span class="line">        			<span class="string">&quot;secure&quot;</span> : <span class="literal">false</span></span><br><span class="line">        		&#125;</span><br><span class="line">        	&#125;,</span><br><span class="line">        	<span class="string">&quot;historyApiFallback&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        	<span class="string">&quot;disableHostCheck&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        	<span class="string">&quot;noInfo&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        	<span class="string">&quot;https&quot;</span>: <span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;router&quot;</span> : &#123;&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>然后关闭项目重新 运行 一遍</p>
+<p>早餐：里脊煎饼果子 8元<br>午餐：<br>晚餐：<br>总计：8 元</p>
 <div style="width:100px;height:30px;">
   <img src="/img/chenhao.png" width="100%" height="100%">
 </div>
@@ -199,32 +158,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2020-11-13%2F5fae377ad9bd0.jpg&amp;refer=http%3A%2F%2Fpic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644370745&amp;t=ea93e4506185ebd2f0b7dd7b417b8a31"></div>
-    
-    <div class="card-text">
-      
-        <a href="../../11/22%E5%B9%B41%E6%9C%8811%E5%8F%B7/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">22年1月11号</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2020-11-13%2F5fae377ad9bd0.jpg&amp;refer=http%3A%2F%2Fpic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644370745&amp;t=ea93e4506185ebd2f0b7dd7b417b8a31"></div>
+      <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F665a10a82e9ee623561fb750af39271826fda8af.jpg&amp;refer=http%3A%2F%2Fi0.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644369435&amp;t=18910f7f90780be428a61949fab5ff15"></div>
     
     <div class="card-text">
       
-        <a href="../22%E5%B9%B41%E6%9C%8810%E5%8F%B7/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">22年1月10号</h2>
+        <a href="../../13/flex%E5%B8%83%E5%B1%80%E4%B8%8Eellipsis%E5%86%B2%E7%AA%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">flex布局与ellipsis冲突不显示省略号</h2>
         </a>
       
       <div class="card-text--row">Older</div>
