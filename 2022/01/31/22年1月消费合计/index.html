@@ -53,14 +53,13 @@
 
 <body>
   <div class="root-container">
-    
-<!-- header container -->
+    <!-- header container -->
 <header class="header-container post">
   
     <div class="post-image" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp6.itc.cn%2Fimages01%2F20210908%2F91566c6273b141ce86f8fdab0482a57c.jpeg&amp;refer=http%3A%2F%2Fp6.itc.cn&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1644986710&amp;t=2d1eb300399927459a1464347ef9bdb6)"></div>
-  
+    
 
-  <!-- navbar -->
+      <!-- navbar -->
 <nav class="navbar">
   <div class="navbar-content">
     <!-- logo -->
@@ -91,47 +90,51 @@
   </div>
 </nav>
 
-  
-  
+        
+          
 
-  
-  
+              
+                
 
-  
-  
+                    
+                      
 
-  
-  
+                            
+                              
 
-  
-  
-    <div class="header-content">
-      <div class="post-text layout-block">
-        <div class="layout-margin">
-          <h1 class="title-wrap">22年1月消费合计</h1>
-          <h2 class="title-sub-wrap">
-            <strong>CH</strong>
-            <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-31T11:56:17.000Z" itemprop="datePublished">2022-01-31</time>
-          </h2>
-          <ul class="wrap-list dark">
+                                    
+                                      
+                                        <div class="header-content">
+                                          <div class="post-text layout-block">
+                                            <div class="layout-margin">
+                                              <h1 class="title-wrap">
+                                                22年1月消费合计
+                                              </h1>
+                                              <h2 class="title-sub-wrap">
+                                                <strong>
+                                                  CH
+                                                </strong>
+                                                <span>发布于</span>
+                                                <time  class="article-date" datetime="2022-01-31T11:56:17.000Z" itemprop="datePublished">2022-01-31</time>
+                                              </h2>
+                                              <ul class="wrap-list dark">
   
     <li><a href="../../../../categories/%E7%94%9F%E6%B4%BB/">📒 生活</a></li>
   
 </ul>
-          <ul class="wrap-list dark">
+                                                <ul class="wrap-list dark">
   
     <li><a href="../../../../tags/%E5%AD%98%E9%92%B1%E8%AE%A1%E5%88%92/">🏷️ 存钱计划</a></li>
   
 </ul>
-        </div>
-      </div>
-    </div>
-  
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
 
-  
-  
-  
+                                          
+                                            
+
 </header>
 
       <!-- 文章 -->
@@ -148,6 +151,122 @@
         <p><img src="https://img2.baidu.com/it/u=314446892,3182370200&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=360" alt="努力ing"></p>
 <span id="more"></span>
 
+<div id="echarts5215" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5215'));
+        // 指定图表的配置项和数据
+        var option = {
+					tooltip: {
+						trigger: 'axis'
+					},
+					legend: {
+						data: ['每日消费金额','每日消费'],
+            textStyle: {
+              color: '#f58d4c'
+            }
+					},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '3%',
+						containLabel: true,
+					},
+					xAxis: {
+						type: 'category',
+						boundaryGap: ['5%', '5%'],
+            axisLabel: {
+                            show: true,
+                            textStyle: {
+                                color: '#f58d4c'
+                            }
+                        },
+            axisLine: {
+              show: true,
+              lineStyle:{
+                color: ['#608ac5'],
+                width: 1,
+                type: 'solid'
+              }
+　        　},
+						data: ['1号','2号','3号','4号','5号','6号','7号','8号','9号','10号','11号','12号','13号','14号','15号','16号','17号','18号','19号','20号','21号','22号','23号','24号','25号','26号','27号','28号','29号','30号','31号']
+					},
+					yAxis: [{
+						type: 'value',
+						name: '每日消费金额',
+            color: '#fff',
+						splitNumber: 6,
+						axisLabel: {
+							formatter: '{value}元',
+              color: '#f58d4c'
+						},
+            axisLine: {
+              show: true,
+              lineStyle:{
+                color: ['#608ac5'],
+                width: 1,
+                type: 'solid'
+              }
+　        　},
+            axisTick:{       
+              show:false
+            },
+            splitLine: {
+              show: true,
+              lineStyle:{
+                color: ['#f58d4c'],
+                width: 1,
+                type: 'solid'
+              }
+　        　}
+					}],
+					dataZoom: [{
+						type: 'inside', // 内置于坐标系中
+						start: 0,
+						end: 30,
+						maxValueSpan: 9,
+						minValueSpan: 5,
+						xAxisIndex: [0]
+					}],
+					series: [{
+							name: '每日消费金额',
+							type: 'bar',
+							stack: 'Total',
+              barGap: 0,
+							barWidth: 30,
+              itemStyle: {
+                   normal: {
+                       label: {
+                           show: true,     
+                           position: 'top', 
+                           textStyle: {     
+                               color: '#608ac5'
+                           },
+                           formatter: function(data) {
+									return '¥' + Number(data.value).toFixed(1);
+								}
+                       }
+                   }
+               },
+							data: [0,0,0,0,0,30.2,30.48,15.02,52.4,44.3,36,38.29,390.6,42.33,111.18,150.4,27.1,30.92,31.6,0,0,0,0,0,0,0,0,0,0,0,0,]
+						},{
+							name: '每日消费',
+							type: 'line',
+              itemStyle : {  
+                  normal : {  
+                    lineStyle:{  
+                      color:'pink'  
+                  }  
+                }  
+              },  
+							data: [0,0,0,0,0,30.2,30.48,15.02,52.4,44.3,36,38.29,390.6,42.33,111.18,150.4,27.1,30.92,31.6,0,0,0,0,0,0,0,0,0,0,0,0,]
+						}
+					]
+				};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 
 <h3><span id="6号总计"><div class="title">6号总计：↓↓↓</div></span></h3><div class="total"><a href="/2022/01/06/22%E5%B9%B41%E6%9C%886%E5%8F%B7/" title="30.2 元">30.2 元</a></div>  
 
@@ -176,6 +295,8 @@
 <h3><span id="18号总计"><div class="title">18号总计：↓↓↓</div></span></h3><div class="total"><a href="/2022/01/18/22%E5%B9%B41%E6%9C%8818%E5%8F%B7/" title="30.92 元">30.92 元</a></div> 
 
 <h3><span id="19号总计"><div class="title">19号总计：↓↓↓</div></span></h3><div class="total"><a href="/2022/01/19/22%E5%B9%B41%E6%9C%8819%E5%8F%B7/" title="31.6 元">31.6 元</a></div> 
+
+<h3><span id="20号总计"><div class="title">20号总计：↓↓↓</div></span></h3><div class="total"><a href="/2022/01/20/22%E5%B9%B41%E6%9C%8820%E5%8F%B7/" title="**** 元">**** 元</a></div> 
 
 <h2><span id="总计"><div class="title">总计：↓↓↓</div></span></h2><div class="total">**** 元</div>  
 
@@ -207,12 +328,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.3gbizhi.com%2F2019%2F0907%2F20190907025057939.jpg&amp;refer=http%3A%2F%2Fpic.3gbizhi.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1645155850&amp;t=03d53d8325003be4e06712032e39b295"></div>
+      <div class="card-cover" background-image-lazy data-img="https://img0.baidu.com/it/u=2967633564,2783133446&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=1000&amp;h=483"></div>
     
     <div class="card-text">
       
-        <a href="../../19/22%E5%B9%B41%E6%9C%8819%E5%8F%B7/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">22年1月19号</h2>
+        <a href="../../20/22%E5%B9%B41%E6%9C%8820%E5%8F%B7/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">22年1月20号</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -272,7 +393,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>19</span>
+        <span>20</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +420,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">6号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">7号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">8号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">9号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">10号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">11号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">12号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">13号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">14号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">10.</span> <span class="toc-text">15号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">11.</span> <span class="toc-text">16号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">12.</span> <span class="toc-text">17号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">13.</span> <span class="toc-text">18号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">14.</span> <span class="toc-text">19号总计：↓↓↓</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">总计：↓↓↓</span></a>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">6号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">7号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">8号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">9号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">10号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">11号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">12号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">13号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">14号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">10.</span> <span class="toc-text">15号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">11.</span> <span class="toc-text">16号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">12.</span> <span class="toc-text">17号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">13.</span> <span class="toc-text">18号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">14.</span> <span class="toc-text">19号总计：↓↓↓</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">15.</span> <span class="toc-text">20号总计：↓↓↓</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">总计：↓↓↓</span></a>
   </div>
 </section>
 
@@ -336,7 +457,7 @@
       
         <li class="categorys-list-item">
           <a href="../../../../categories/%E7%94%9F%E6%B4%BB/">
-            生活 (15)
+            生活 (16)
           </a>
         </li>
       
