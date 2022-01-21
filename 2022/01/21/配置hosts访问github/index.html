@@ -158,7 +158,7 @@
 
 <h2><span id="问题详情">问题详情：</span></h2><h3><span id="因为github是国外的所以会造成数据丢失访问速度过慢">因为github是国外的所以会造成数据丢失访问速度过慢</span></h3><h3><span id="解决">解决：</span></h3><h4><span id="1用管理员身份打开hosts文件查看所有文件">1.用管理员身份打开hosts文件(查看所有文件)</span></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
 
-<h4><span id="2winr-输入-cmd-打开命令窗口">2.win+r 输入 cmd 打开命令窗口</span></h4><a href="%5Bhttp://tool.chinaz.com/dns%5D" title="[检测网站]" target>检测网站</a>
+<h4><span id="2winr-输入-cmd-打开命令窗口">2.win+r 输入 cmd 打开命令窗口</span></h4><p><a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">检测网站</a></p>
 <h4><span id="3-在检测网站查询速度快的dns-复制粘贴在命令窗口-ping-一下">3. 在检测网站查询速度快的DNS 复制粘贴在命令窗口 ping 一下</span></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github.com</span><br><span class="line">assets-cdn.github.com</span><br><span class="line">github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
 
 <h4><span id="4添加hosts配置格式如下">4.添加hosts配置(格式如下)</span></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">52.192.72.89  github.com</span><br><span class="line">185.199.109.153  assets-cdn.github.com</span><br><span class="line">203.208.39.99  github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
