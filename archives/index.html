@@ -98,7 +98,7 @@
                   <div class="header-content">
                     <div class="post-text layout-block layout-padding">
                       <h1 class="title-wrap">归档</h1>
-                      <h2 class="title-sub-wrap">共有24篇文章</h2>
+                      <h2 class="title-sub-wrap">共有25篇文章</h2>
                     </div>
                   </div>
                   
@@ -138,6 +138,36 @@
             <div class="card-text--row">
               <span>发布于</span>
               <time  class="" datetime="2022-01-31T11:56:17.000Z" itemprop="datePublished">2022-01-31</time>
+            </div>
+            <ul class="wrap-list dark">
+  
+    <li><a href="../categories/%E7%94%9F%E6%B4%BB/">📒 生活</a></li>
+  
+</ul>
+            <ul class="wrap-list dark">
+  
+    <li><a href="../tags/%E5%AD%98%E9%92%B1%E8%AE%A1%E5%88%92/">🏷️ 存钱计划</a></li>
+  
+</ul>
+          </div>
+        </article>
+      </div>
+    
+      <div class="article-item layout-padding">
+        <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+          
+            <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F12015322246%2F0.jpg&amp;refer=http%3A%2F%2Finews.gtimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1645584167&amp;t=2020f1406ca47250c5918baf1bb33700"></div>
+          
+
+          <div class="card-text">
+            
+              <a href="../2022/01/24/22%E5%B9%B41%E6%9C%8824%E5%8F%B7/" itemprop="url">
+                <h2 class="card-text--title">22年1月24号</h2>
+              </a>
+            
+            <div class="card-text--row">
+              <span>发布于</span>
+              <time  class="" datetime="2022-01-24T01:32:27.000Z" itemprop="datePublished">2022-01-24</time>
             </div>
             <ul class="wrap-list dark">
   
@@ -397,36 +427,6 @@
         </article>
       </div>
     
-      <div class="article-item layout-padding">
-        <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
-          
-            <div class="card-cover" background-image-lazy data-img="https://img0.baidu.com/it/u=527870439,2629216552&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=720&amp;h=405"></div>
-          
-
-          <div class="card-text">
-            
-              <a href="../2022/01/16/22%E5%B9%B41%E6%9C%8816%E5%8F%B7/" itemprop="url">
-                <h2 class="card-text--title">22年1月16号</h2>
-              </a>
-            
-            <div class="card-text--row">
-              <span>发布于</span>
-              <time  class="" datetime="2022-01-16T11:45:09.000Z" itemprop="datePublished">2022-01-16</time>
-            </div>
-            <ul class="wrap-list dark">
-  
-    <li><a href="../categories/%E7%94%9F%E6%B4%BB/">📒 生活</a></li>
-  
-</ul>
-            <ul class="wrap-list dark">
-  
-    <li><a href="../tags/%E5%AD%98%E9%92%B1%E8%AE%A1%E5%88%92/">🏷️ 存钱计划</a></li>
-  
-</ul>
-          </div>
-        </article>
-      </div>
-    
   </div>
 </div>
 
@@ -441,7 +441,7 @@
 
         <!-- footer container -->
 <footer id="footer" class="footer">
-  <div style="position: fixed;left:10px;top: 510px;width: 350px;height:150px">
+  <div style="position: fixed;left:10px;top: 510px;width: 350px;height:150px;font-size: 16px;color: #a67654;">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
       <div id="aplayer"></div>
@@ -451,17 +451,17 @@
       <script>
         const ap = new APlayer({
           container: document.getElementById('aplayer'),
-          autoplay: false, //自动播放
+          autoplay: true, //自动播放
           listFolded: true, //播放列表默认折叠
           listMaxHeight: 90, //播放列表最大高度
           order: 'list', //音频循环顺序, 可选值: 'list', 'random'
           loop: 'all', //音频循环播放, 可选值: 'all', 'one', 'none'
           theme: '#e9e9e9', //切换音频时的主题色，优先级低于audio.theme
-          preload: 'none', //音频预加载，可选值: 'none', 'metadata', 'auto'
+          preload: 'metadata', //音频预加载，可选值: 'none', 'metadata', 'auto'
           mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
           lrcType: 3, //歌词格式，可选值：3（LRC文件歌词格式），1（JS字符串歌词格式）
-          volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-          fixed: false, //吸底模式（fixed:true），迷你模式（mini:true），普通模式（注释此行或者设置fixed:false）
+          volume: 0.6, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+          fixed: true, //吸底模式（fixed:true），迷你模式（mini:true），普通模式（注释此行或者设置fixed:false）
           audio: [
             {
               name: '危险派对',
@@ -511,6 +511,43 @@
           setTheme(data.index);
         });
       </script>
+      <style>
+        #aplayer {
+          left: 10px !important;
+          bottom: 30px !important;
+        }
+
+        .aplayer .aplayer-body {
+          width: 382px !important;
+          left: 10px !important;
+          bottom: 30px !important;
+          padding: 0 !important;
+        }
+
+        .aplayer .aplayer-miniswitcher {
+          right: -18px !important;
+        }
+
+        .aplayer .aplayer-body .aplayer-info {
+          width: 320px !important;
+        }
+
+        .aplayer .aplayer-lrc {
+          bottom: 30px !important;
+          height: 60px !important;
+        }
+
+        .aplayer .aplayer-lrc .aplayer-lrc-contents p {
+          color: #ca7845 !important;
+          font-size: 16px !important;
+          height: 16px !important;
+          line-height: 16px !important;
+          font-weight: 400 !important;
+          font-family: Microsoft YaHei !important;
+          margin-bottom: 5px !important;
+          opacity: 0.8 !important;
+        }
+      </style>
       
   </div>
   <div class="footer-container">
